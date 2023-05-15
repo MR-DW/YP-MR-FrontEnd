@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div>
+      <h2>Ingrese Su Nueva Experiencia Laboral</h2>
+      <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreExp">Nombre de la Empresa</label>
+          <input placeholder="Empresa" type="text" class="form-control" id="nombreExp" name="nombreExp" [(ngModel)]="nombreExp" required />
+
+        </div>
+        <div class="form-group">
+          <label for="descripcionExp">Describa su trabajo</label>
+          <input placeholder="Desarrollador..." type="text" class="form-control" id="descripcionExp" name="descripcionExp" [(ngModel)]="descripcionExp" required />
+
+        </div>
+        <button class="btn btn-dark" type="submit">Guardar</button>
+        <button class="btn btn-dark" type="button" (click)="retorno()">Volver</button>
+
+      </form>
+    </div>
+  </div>
+</div>

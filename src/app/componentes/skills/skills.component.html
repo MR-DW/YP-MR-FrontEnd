@@ -1,0 +1,48 @@
+<div id="skills" class="container">
+  <h2 id="titulo-aside-h4" class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">Habilidades</h2>
+
+      <div id="row" class="row">
+          <h3 class="accordion-header " id="flush-headingOne">
+          Soft and Hard Skills
+          </h3>
+          <button type="button" class="btn btn-dark" routerLink="/nuevaskill" >
+            <!-- *ngIf="isLogged" -->
+            Agregar<i class="bi bi-plus"></i>
+          </button>
+      </div>
+      <div id="row2" class="d-flex flex-wrap  flex-sm-row">
+          <div class="contenedor" *ngFor="let skill of skills">
+            <span id="span1" >
+              <circle-progress
+                  [percent]="(skill.porcentajeSkills)"
+                  [radius]="50"
+                  [backgroundColor]="'black'"
+                  [outerStrokeWidth]="3"
+                  [innerStrokeWidth]="1"
+                  [outerStrokeColor]="'white'"
+                  [innerStrokeColor]="'white'"
+                  [animation]="true"
+                  [animationDuration]="4000">
+              </circle-progress>
+            </span>
+            <span id="span2">
+
+              <p>{{skill.nombreSkills}}</p>
+
+              <div class="botonera">
+                <button  class="btn btn-dark ml-1" routerLink="/editarskills/{{skill.id}}">
+                  <!-- *ngIf="isLogged" -->
+                  <i class="bi bi-pencil-square"></i>
+                </button>
+                <button  class="btn btn-danger mr-1" (click)="borrar(skill.id)">
+                  <!-- *ngIf="isLogged" -->
+                  <i class="bi bi-trash3"></i>
+                </button>
+              </div>
+
+            </span>
+          </div>
+
+      </div>
+  </div>
+

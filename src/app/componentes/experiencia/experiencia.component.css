@@ -1,0 +1,131 @@
+#section-exp{
+    height:100vh;
+    background-color:#ffffff;
+    padding:9% 0 0;
+    margin:0 auto;
+    z-index:-1;
+}
+
+.row{
+  padding: 0 5%;
+}
+
+#subtitulo-experiencia{
+    color:black;
+}
+
+#container-card-exp{
+    height: 60vh;
+    margin:1% auto 0;
+    z-index:9;
+}
+
+
+.card{
+    padding:2% 0;
+    background-color:rgb(0, 0, 0);
+    margin:1% auto;
+    /* width:20%; */
+    height: 20%;
+    z-index:99;
+}
+
+#img-card{
+    width:auto;
+    height:20%;
+    object-position:center center;
+    margin:0 auto;
+}
+
+.card-body{
+    height:80%;
+    padding:3%;
+    text-align:center;
+    color:#ffffff;
+}
+
+.card-title{
+    border-top:1px solid #ffffff;
+    padding:5% 0;
+    color:#fff;
+}
+
+.titulo{
+  width: 25%;
+}
+
+.descripcion{
+  width: 50%;
+}
+
+.descripcion .text{
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.editar, .borrar{
+  width: 10%;
+}
+
+
+
+
+@media (max-width: 768px) {
+  #section-exp{
+    height:85vh;
+  }
+
+#subtitulo-experiencia{
+  margin-top: 15%;
+  height: 5%;
+}
+
+.row{
+  height: 100%;
+  align-content: flex-start;
+}
+
+  .container-card-exp{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+.card{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 45%;
+}
+
+#img-card{
+  margin:auto 0;
+  vertical-align: middle;
+  width: 20%;
+  height: 80%;
+  background-size: 100% 100%;
+
+}
+
+
+.card-body{
+  height:100%;
+  padding:0;
+}
+
+.card-title{
+  border-left:1px solid #ffffff;
+  border-top:none;
+  padding:0;
+  margin: 0 auto;
+}
+
+.card-text{
+  border-left:1px solid #ffffff;
+  border-top:none;
+  padding:0;
+  margin: 0 auto;
+}
+}
+

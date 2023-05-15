@@ -1,0 +1,138 @@
+#header{
+    height:15%;
+	  /* width: 100vw; */
+    /* margin:0;
+    padding:0; */
+    position: fixed;
+    /* background-color:rgb(0, 0, 0); */
+    z-index: 999999999;
+    font-size: 12px;
+}
+
+app-header-social{
+  height:25%;
+  /* background-color:rgb(0, 0, 0); */
+}
+
+
+#nav-portafolio{
+    z-index:9999999999;
+    /* height: 75%; */
+    background-color:rgb(0, 0, 0)!important;
+}
+
+#nav-row{
+  flex-wrap: nowrap;
+  /* width: 100%; */
+}
+
+/* conatiner logo */
+#div-btn-logo{
+  padding: 2%;
+}
+
+/* boton logo */
+#btn-logo{
+    display: inline-block;
+    /* width: 10%; */
+    height:10%;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    border-radius:10px;
+    padding:.5% 0%;
+    text-decoration:none;
+    color:#000000!important;
+    margin:0 .5%;
+    font-size: 12px;
+}
+
+/* #div-btns{
+  width: 65%;
+} */
+
+#navbarNav{
+  justify-content: flex-end;
+}
+
+.navbar-nav{
+  /* width:100%; */
+  height:100%;
+  display: flex;
+  flex-direction: row!important;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+/* todos los boton */
+.a-nav{
+    height:60%;
+    background-color:rgb(255, 255, 255);
+    text-align:center;
+    border-radius:10px;
+    text-decoration:none;
+    color:#000000!important;
+    margin:0 .5%;
+    margin-left: 5%;
+}
+
+.a-nav:hover, #btn-logo:hover,
+.navbar-toggler:hover, #a-nav2:hover,
+#a-nav3:hover,#a-nav4:hover,#a-nav5:hover{
+    background-color:#000000!important;
+    color:rgb(255, 255, 255)!important;
+    border-radius:10px;
+    outline:3px solid rgb(255, 255, 255);
+}
+
+/* container boton mi carrera */
+
+.dropdown-menu{
+  width: 50%;
+    font-size: 12px;
+}
+
+.navbar-toggler{
+  background-color:rgb(255, 255, 255);
+  color:#000000!important;
+}
+
+@media (max-width: 768px) {
+
+
+#navbarNav{
+  height: 150px;
+  /* display: flex; */
+
+}
+
+.navbar-nav{
+  padding-top: 5%;
+  flex-direction: column!important;
+  align-items: flex-end;
+    justify-content: flex-start;
+}
+
+  .nav-item{
+    width: 25%;
+    height: 34%;
+  }
+
+  .nav-link{
+    height: 80%;
+  }
+
+  .dropdown-menu{
+    width: 100%;
+      font-size: 12px;
+      position: relative;
+    top: -78px;
+    left: -200px;
+
+  }
+
+  .a-nav{
+    width: 90%;
+  }
+
+}

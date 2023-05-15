@@ -1,0 +1,103 @@
+
+<section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img src=""
+                    style="width: 185px;" alt="logo">
+
+                </div>
+
+                <form #f="ngForm" (ngSubmit)="onLogin()" >
+                  <!-- novalidate -->
+                  <p>Iniciar Sesión</p>
+
+                  <div class="form-outline mb-4">
+                      <input type="email" class="form-control form-control-lg"
+                      id="nombreUsuario" name="nombreUsuario" placeholder="Nombre De Usuario" [(ngModel)]="nombreUsuario" >
+
+                    <label class="form-label" for="nombreUsuario">Nombre De Usuario</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" class="form-control form-control-lg" name="password"
+                    id="password" placeholder="Contraseña" [(ngModel)]="password" >
+
+                  <label class="form-label" for="password">Contraseña</label>
+
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-dark" type="submit">Ingresar</button>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1" *ngIf="mensajeErr !== '' ">
+                    <p class="text" >{{ mensajeErr }}</p>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mt-1 mb-5 pb-1">Bienvenidos A Mi Portfolio</h4>
+                <p class="small mb-0">Aquí podras observar mis experiencias laborales, mis trabajos, mi formación academica y mucho más.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--
+
+<form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)">
+  <p>Iniciar Sesión</p>
+
+  <div class="form-outline mb-4">
+      <input type="email"  formControlName="email"
+      [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
+      class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+    <div *ngIf="Email?.errors && Email?.touched">
+      <p *ngIf="Email?.hasError('required')" class="text-danger">
+        El email es requerido.
+      </p>
+      <p *ngIf="Email?.hasError('email')" class="text-danger">
+        El formato email es invalido.
+      </p>
+    </div>
+    <label class="form-label" for="exampleInputEmail1">Email</label>
+  </div>
+
+  <div class="form-outline mb-4">
+    <input type="password" formControlName="password"
+    [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+    class="form-control" id="exampleInputPassword1" placeholder="Contraseña" >
+  <div *ngIf="Password?.errors && Password?.touched">
+    <p *ngIf="Password?.hasError('required')" class="text-danger">
+      La contraseña es requerida.
+    </p>
+    <p *ngIf="Password?.hasError('minlength')" class="text-danger">
+      La contraseña debe ser de 8 o más caracteres.
+    </p>
+  </div>
+
+    <label class="form-label" for="exampleInputPassword1">Contraseña</label>
+  </div>
+
+  <div class="text-center pt-1 mb-5 pb-1">
+    <button class="btn btn-dark" type="submit">Ingresar</button>
+  </div>
+
+</form> -->
+

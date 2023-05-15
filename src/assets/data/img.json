@@ -1,0 +1,23 @@
+{
+    "imgperfil":"./assets/img/perfil.jpg",
+    "aside":"./assets/img/aside.jpg",
+    "casainteligente":"./assets/img/casa-inteligente.jpg",
+    "contactarme":"./assets/img/contactarme.jpg",
+    "contactanos":"./assets/img/contactanos.jpg",
+    "desarrolloweb":"./assets/img/desarrollo-web.jpg",
+    "habilidadesdesarrolladorweb":"./assets/img/habilidades-desarrollador-web.jpg",
+    "instagram":"./assets/img/instagram.jpg",
+    "linkedin":"./assets/img/linkedin.jpg",
+    "llamada":"./assets/img/llamada.jpg",
+    "navegadordeinternet":"./assets/img/navegador-de-internet.jpg",
+    "portafolio":"./assets/img/portafolio.icon",
+    "sitioweb":"./assets/img/sitio-web.jpg",
+    "sobremi":"./assets/img/sobre-mi.jpg",
+    "conexion":{
+            "csmescritorio":"./assets/img/fotos-conexion/csm-escritorio.jpg",
+            "csmmobile":"./assets/img/fotos-conexion/csm-mobile.jpg"
+    },
+    "web":{
+        "csmescritorio":"./assets/img/fotos-web/webcuantica.jpg"
+}
+}

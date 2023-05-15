@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div>
+      <h2>Ingrese Su Nueva Educación</h2>
+      <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreEdu">Nombre de la Certificación</label>
+          <input placeholder="Titulación" type="text" class="form-control" id="nombreEdu" name="nombreEdu" [(ngModel)]="nombreEdu" required />
+
+        </div>
+        <div class="form-group">
+          <label for="descripcionEdu">Descripción breve de sus estudios</label>
+          <input placeholder="Instituto - Duración - Información" type="text" class="form-control" id="descripcionEdu" name="descripcionEdu" [(ngModel)]="descripcionEd" required />
+
+        </div>
+        <button class="btn btn-dark" type="submit">Guardar</button>
+        <button class="btn btn-dark" type="button" (click)="retorno()">Volver</button>
+
+      </form>
+    </div>
+  </div>
+</div>

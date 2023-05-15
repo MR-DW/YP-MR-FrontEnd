@@ -1,0 +1,86 @@
+#container-edu{
+    height:100vh;
+    background-color:rgb(255, 255, 255);
+    padding:9% 1% 0;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 2%;
+
+  justify-content: space-between;
+}
+
+.row h3{
+  text-align: left!important;
+  width: 84%;
+}
+
+.row button{
+  width: 10%!important;
+  height: 100%!important;
+}
+
+i{
+  width: 100%;
+}
+
+#container-edu ul{
+  padding: 0;
+}
+
+#subtitulo-educacion{
+    margin: 1% 0 3%;
+    text-align:center;
+    color:#000000;
+}
+
+.card-body{
+    background-color:#000000;
+    color: white;
+    margin: .5%;
+    padding: 1.5%;
+}
+
+#info-educacion{
+    text-align:center;
+    line-height: 1;
+
+}
+
+.card-body:hover{
+  background-color:#ffffff;
+  color: rgb(0, 0, 0);
+}
+
+li{
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+  #container-edu{
+    height:85vh;
+    padding:25% 1% 0;
+  }
+
+  .row{
+
+    justify-content: center;
+  }
+
+  .row h3{
+    text-align: left;
+    width: 69%;
+  }
+
+  .row button{
+    width: 30%;
+  }
+}

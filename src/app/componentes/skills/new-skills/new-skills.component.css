@@ -1,0 +1,52 @@
+
+.container{
+  padding: 5%;
+  text-align: center;
+  height: 100vh;
+}
+
+.row{
+  background-color: black;
+  height: 100%;
+  padding: 5% 0;
+}
+
+.form-group{
+  margin: 5% auto 3%;
+  width: 50%;
+  color: white;
+}
+
+button{
+  margin: auto 5%;
+}
+
+#radio{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+#radio input{
+  width: 0%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+
+
+.row{
+  padding: 10% 0;
+}
+
+
+
+.form-group{
+  margin: 10% auto;
+  width: 100%;
+}
+
+button{
+  margin: auto 10%;
+}
+}

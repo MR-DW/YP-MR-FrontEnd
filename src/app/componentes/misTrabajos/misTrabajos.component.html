@@ -1,0 +1,61 @@
+<div id="aside-porta" class="container">
+
+
+  <div class="row d-flex flex-wrap flex-column flex-sm-row" id="row1">
+    <div class="card " id="card-paginas">
+      <h2 id="titulo-aside">Mis Proyectos</h2>
+      <div class="card-body ">
+        <!-- Button trigger modal -->
+
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          id="btn-modal">Ver Listado
+          <i class="bi bi-box-arrow-in-right"></i>
+
+        </button>
+
+        <button type="button" class="btn btn-dark btn2" routerLink="/nuevoproyecto" >
+          <!-- *ngIf="isLogged" -->
+          <i class="bi bi-plus-square"></i>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+
+              <div class="modal-body">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+                <div id="contenedor" class="container" *ngFor="let proyecto of proyectos">
+
+
+                    <p id="Descripcion-firstweb" class="Descripcion-firstweb">
+                      <i class="bi bi-symmetry-horizontal"></i>
+                      {{ proyecto.nombreProyectos }}:
+                      <a class="link-pagina col-xxl-4 col-xl-4 col-lg-4 col-md-8 col-sm-8 col-xs-8" [href]="proyecto.urlProyectos" target="_blank">
+                      {{ proyecto.urlProyectos }}</a>
+                    </p>
+                    <p class="Descripcion-firstweb">{{ proyecto.descripcionProyectos }}</p>
+                    <button class="btn btn-light" routerLink="/editarproyecto/{{proyecto.id}}" >
+                      <!-- *ngIf="isLogged" -->
+                      <i class="bi bi-pencil-square"></i>
+                    </button>
+                    <button class="btn btn-danger" (click)="borrar(proyecto.id)" >
+                      <!-- *ngIf="isLogged" -->
+                      <i class="bi bi-trash3"></i>
+                    </button>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>

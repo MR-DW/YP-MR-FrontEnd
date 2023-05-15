@@ -1,0 +1,26 @@
+<div id="container-edu" class="container col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+  <div class="row">
+
+    <h3 class="subtitulo col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" id="subtitulo-educacion">Educación:</h3>
+    <button type="button" class="btn btn-dark" routerLink="/nuevaeducacion" >
+      <!-- *ngIf="isLogged" -->
+      <i class="bi bi-plus"></i>
+    </button>
+  </div>
+    <ul class="d-flex flex-wrap flex-column flex-sm-row">
+    <li *ngFor="let edu of educacion"  class="card card-body col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+      <p id="info-educacion">
+        {{edu.nombreEdu}} ||
+      </p>
+      <p>  {{edu.descripcionEd}}</p>
+      <button class="btn btn-light" routerLink="/editareducacion/{{edu.id}}" >
+        <!-- *ngIf="isLogged" -->
+        <i class="bi bi-pencil-square"></i>
+      </button>
+      <button class="btn btn-danger" (click)="borrar(edu.id)" >
+        <!-- *ngIf="isLogged" -->
+        <i class="bi bi-trash3"></i>
+      </button>
+    </li>
+  </ul>
+</div>

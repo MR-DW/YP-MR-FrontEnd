@@ -1,0 +1,25 @@
+<div class="container" *ngIf="skill" >
+  <!-- *ngIf="!expLab" -->
+  <!-- -->
+  <div class="row">
+    <div>
+      <h2>Edite Su Habilidades</h2>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" >
+
+        <div class="form-group">
+          <label for="nombreExp">Nombre de la Habilidad</label>
+          <input placeholder="Empresa" type="text" class="form-control" id="nombreSkills" name="nombreSkills" [(ngModel)]="skill.nombreSkills" required />
+
+        </div>
+        <div class="form-group">
+          <label for="descripcionExp">Ingrese el Porcentaje de la Habilidad</label>
+          <input type="number" class="form-control" id="porcentajeSkills" name="porcentajeSkills" [(ngModel)]="skill.porcentajeSkills" required />
+
+        </div>
+        <button class="btn btn-dark" type="submit">Actualizar</button>
+        <button class="btn btn-dark" type="button" (click)="retorno()">Volver</button>
+
+      </form>
+    </div>
+  </div>
+</div>

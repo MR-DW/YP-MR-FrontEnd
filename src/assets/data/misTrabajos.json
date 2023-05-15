@@ -1,0 +1,23 @@
+{ 
+    "misTrabajos":[
+        {
+            "titulo":"Conexion",
+            "empresa":"Corralón San Miguel",
+            "descripcion":"Es una Landingpage diseñada para aúnar las diversas funciones y servicios que ofrece el Cliente. Con el uso de la misma, el usuario podrá acceder a diferentes secciones de la página web y links externos de manera directa. Por lo que es muy eficiente para evitar la perdida de tiempo e interés por no encontrar rapidamente lo que el usuario necesita. Fue construída con HTML y CSS puro/vanila.",
+            "link":"https://mr-dw.github.io/corralon-san-miguel/",
+            "img":"./assets/img/fotos-conexion/csm-escritorio.jpg",
+            "href":"#exampleModal1",
+            "id":"exampleModal1"
+        },
+        {
+            "titulo":"Página web informativa",
+            "empresa":"RMCuantica",
+            "descripcion":"Es la página principal de la empresa dedicada a brindar servicios IT, en la misma se pueden encontrar toda la información sobre la empresa. Fue construída con WordPress y Elementor.",
+            "link":"http://cuantica.io:8080/",
+            "img":"./assets/img/fotos-web/webcuantica.jpg",
+            "href":"#exampleModal2",
+            "id":"exampleModal2"
+        }
+    ]
+}
+
