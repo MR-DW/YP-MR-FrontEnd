@@ -8,12 +8,6 @@
             <div class="col-lg-6">
               <div class="card-body p-md-5 mx-md-4">
 
-                <div class="text-center">
-                  <img src=""
-                    style="width: 185px;" alt="logo">
-
-                </div>
-
                 <form #f="ngForm" (ngSubmit)="onLogin()" >
                   <!-- novalidate -->
                   <p>Iniciar Sesión</p>
@@ -38,7 +32,7 @@
                   </div>
 
                   <div class="text-center pt-1 mb-5 pb-1" *ngIf="mensajeErr !== '' ">
-                    <p class="text" >{{ mensajeErr }}</p>
+                    <p class="text-danger" >{{ mensajeErr }}</p>
                   </div>
 
                 </form>
