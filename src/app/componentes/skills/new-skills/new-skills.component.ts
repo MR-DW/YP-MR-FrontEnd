@@ -24,16 +24,16 @@ export class NewSkillsComponent implements OnInit{
     const s = new Skills(this.nombreSkills, this.porcentajeSkills);
     this.sSkills.save(s).subscribe(data =>{
       alert("Skills Guardada");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/skills']);
     }, err => {
       alert("No es posible crear su nueva Skills");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/skills']);
     }
     )
   }
 
   retorno():void{
-    this.router.navigate(['/portfolio'])
+    this.router.navigate(['/skills'])
   }
 
 }

@@ -24,16 +24,16 @@ export class NeweducacionComponent implements OnInit{
     const edu = new Educacion(this.nombreEdu, this.descripcionEd);
     this.sEducacion.save(edu).subscribe(data =>{
       alert("educacion Guardada");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/educacion']);
     }, err => {
       alert("No es posible crear su nueva educacion");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/educacion']);
     }
     )
   }
 
   retorno():void{
-    this.router.navigate(['/portfolio'])
+    this.router.navigate(['/educacion'])
   }
 
 }

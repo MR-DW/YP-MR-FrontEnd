@@ -20,12 +20,7 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void{
-
-    // if(this.tokenService.getToken()){
-    //   this.isLogged=true;
-    // }else{
-    //   this.isLogged = false;
-    // }
+    this.isLoginPage();
   }
 
   login(){
@@ -33,7 +28,11 @@ export class HeaderComponent implements OnInit {
   }
 
   volverAlMenuPrincipal(){
-    this.router.navigate(['/portfolio']);
+    this.router.navigate(['/sobre-mi']);
   }
+
+  isLoginPage(): boolean {
+  return this.router.url === '/iniciar-sesion';
+}
 
 }

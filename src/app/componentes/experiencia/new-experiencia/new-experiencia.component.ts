@@ -23,16 +23,16 @@ export class NewExperienciaComponent implements OnInit{
     const expe = new Experiencia(this.nombreExp, this.descripcionExp);
     this.sExperiencia.save(expe).subscribe(data =>{
       alert("Experiencia Guardada");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/experiencia']);
     }, err => {
       alert("No es posible crear su nueva experiencia");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/experiencia']);
     }
     )
   }
 
   retorno():void{
-    this.router.navigate(['/portfolio'])
+    this.router.navigate(['/experiencia'])
   }
 
 }

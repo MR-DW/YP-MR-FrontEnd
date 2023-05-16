@@ -5,7 +5,8 @@
   height: 40%;
   width: 100vw;
   flex-wrap: nowrap;
-align-items: center
+align-items: center;
+color:white;
 }
 
 #div-APlogo{
@@ -15,7 +16,7 @@ align-items: center
 }
 
 #APlogo{
-  width: 80px;
+  width: 40px;
 }
 
 .social{

@@ -30,7 +30,7 @@ export class EditSkillsComponent implements OnInit {
         console.log("aca es el error")
         alert("Error al modificar experiencia");
 
-        this.router.navigate(['/portfolio']);
+        this.router.navigate(['/skills']);
       }
     )
 
@@ -43,16 +43,16 @@ export class EditSkillsComponent implements OnInit {
     this.sSkill.update(id, this.skill).subscribe(
       data => {
         alert("skill Modificada");
-        this.router.navigate(['/portfolio']);
+        this.router.navigate(['/skills']);
       }, err => {
         alert("Error al modificar skill");
-        this.router.navigate(['/portfolio']);
+        this.router.navigate(['/skills']);
       }
     )
   }
 
   retorno():void{
-    this.router.navigate(['/portfolio'])
+    this.router.navigate(['/skills'])
   }
 
 }

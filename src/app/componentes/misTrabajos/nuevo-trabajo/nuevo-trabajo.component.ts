@@ -24,15 +24,15 @@ export class NuevoTrabajoComponent implements OnInit{
     const proyecto = new Proyectos(this.nombreProyectos, this.descripcionProyectos, this.urlProyectos);
     this.sProyectos.save(proyecto).subscribe(data =>{
       alert("Proyecto Guardado");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/mis-trabajos']);
     }, err => {
       alert("No es posible crear su nuevo proyecto");
-      this.router.navigate(['/portfolio']);
+      this.router.navigate(['/mis-trabajos']);
     }
     )
   }
 
   retorno():void{
-    this.router.navigate(['/portfolio'])
+    this.router.navigate(['/mis-trabajos'])
   }
 }

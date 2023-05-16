@@ -26,11 +26,4 @@ export class PersonaService {
     return this.HttpClient.put<any>(this.URL + `update/${id}`, persona);
   }
 
-  // public save(ersona:Persona): Observable<any>{
-  //   return this.HttpClient.post<any>(this.URL + 'create', persona);
-  // }
-
-  // public delete(id:number): Observable<any>{
-  //   return this.HttpClient.delete<any>(this.URL + `delete/${id}`);
-  // }
 }

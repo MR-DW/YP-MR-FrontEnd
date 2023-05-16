@@ -11,8 +11,6 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { PorfolioComponent } from './componentes/porfolio/porfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
-// import { InterceptorProvider, InterceptorService } from './servicios/serviciosABorrar/interceptor.service';
-// import { DatosPorfolioService } from './servicios/serviciosABorrar/datos-porfolio.service';
 import { HeaderSocialComponent } from './componentes/header-social/header-social.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FormsModule } from '@angular/forms';
@@ -53,12 +51,8 @@ import { EditarTrabajoComponent } from './componentes/misTrabajos/editar-trabajo
     ReactiveFormsModule,
     FormsModule,
     NgCircleProgressModule.forRoot({}),
-    // RouterModule.forRoot(appRoutes, {enableTracing: true})
   ],
-  providers: [
-    // DatosPorfolioService,
-    // InterceptorProvider,
-   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,7 +5,6 @@ import { MisTrabajosComponent } from './componentes/misTrabajos/misTrabajos.comp
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
-import { PorfolioComponent } from './componentes/porfolio/porfolio.component';
 import { IniciarSesionComponent } from './componentes/iniciar-sesion/iniciar-sesion.component';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia/new-experiencia.component';
 import { NeweducacionComponent } from './componentes/educacion/new-educacion/new-educacion.component';
@@ -17,13 +16,17 @@ import { EditarSobreMiComponent } from './componentes/sobreMi/editar-sobre-mi/ed
 import { NuevoTrabajoComponent } from './componentes/misTrabajos/nuevo-trabajo/nuevo-trabajo.component';
 import { EditarTrabajoComponent } from './componentes/misTrabajos/editar-trabajo/editar-trabajo.component';
 
-// import { GuardGuard } from './servicios/serviciosABorrar/guard.guard';
 
 const routes: Routes = [
-  // canActivate:[GuardGuard]
-  {path:'portfolio', component:PorfolioComponent, },
   {path:'iniciar-sesion', component:IniciarSesionComponent},
   {path:'', redirectTo:'iniciar-sesion', pathMatch:'full'},
+
+  {path:'experiencia', component:ExperienciaComponent},
+  {path:'educacion', component:EducacionComponent},
+  {path:'sobre-mi', component:SobreMiComponent},
+  {path:'skills', component:SkillsComponent},
+  {path:'mis-trabajos', component:MisTrabajosComponent},
+
   {path:'nuevaexperiencia', component:NewExperienciaComponent},
   {path:'editarexperiencia/:id', component:EditExperienciaComponent},
   {path:'nuevaeducacion', component:NeweducacionComponent},

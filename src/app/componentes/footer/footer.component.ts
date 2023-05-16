@@ -23,7 +23,7 @@ export class FooterComponent implements OnInit {
    }
 
   cargarPersona(){
-    this.personaService.detail(5).subscribe(
+    this.personaService.detail(1).subscribe(
       data=>{
         this.persona = data;
         console.log("persona", this.persona);

@@ -1,7 +1,7 @@
-<header id="header" class="header col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<header id="header" class="header col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" >
     <app-header-social></app-header-social>
 
-    <nav id="nav-portafolio" class="navbar navbar-expand-lg bg-body-tertiary col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <nav id="nav-portafolio" class="navbar navbar-expand-lg bg-body-tertiary col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngIf="!isLoginPage()">
       <div class="container-fluid col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10">
         <button type="button" id="btn-logo"  class="navbar-brand col-xxl-2 col-xl-2 col-lg-2" (click)="volverAlMenuPrincipal()">
           MR<br>Desarrollo Web
@@ -12,23 +12,21 @@
         <div class="collapse navbar-collapse col-xxl-3 col-xl-3 col-lg-3" id="navbarNav">
           <ul class="navbar-nav col-xxl-10 col-xl-10 col-lg-10">
             <li  id="nav-item2" class="nav-item nav-item1 col-xxl-2 col-xl-2 col-lg-2">
-              <a id="a-nav" class="nav-link active a-nav" aria-current="page"href="portfolio/#div-sobre-mi">Sobre Mí</a>
+              <a id="a-nav" class="nav-link active a-nav" aria-current="page" routerLink="/sobre-mi">Sobre Mí</a>
             </li>
             <li class="nav-item nav-item2 dropdown col-xxl-2 col-xl-2 col-lg-2">
               <a id="a-nav1" class="nav-link dropdown-toggle a-nav" href="#"role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Mi Carrera
               </a>
               <ul class="dropdown-menu col-xxl-1 col-xl-1 col-lg-1" >
-                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav2" class="a-nav dropdown-item " href="portfolio/#section-exp" >Mi Experiencia</a></li>
-                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav3" class="a-nav dropdown-item " href="portfolio/#container-edu"  >Mi Educación</a></li>
-                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav4" class="a-nav dropdown-item " href="portfolio/#skills" >Mis Habilidades</a></li>
-                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav5" class="a-nav dropdown-item " href="portfolio/#aside-porta" >Mis Proyectos</a></li>
+                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav2" class="a-nav dropdown-item "  routerLink="/experiencia" >Mi Experiencia</a></li>
+                <!-- href="portfolio/#section-exp" -->
+                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav3" class="a-nav dropdown-item " routerLink="/educacion"  >Mi Educación</a></li>
+                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav4" class="a-nav dropdown-item " routerLink="/skills" >Mis Habilidades</a></li>
+                <li class="container-link col-xxl-11 col-xl-11 col-lg-11"><a id="a-nav5" class="a-nav dropdown-item "  routerLink="/mis-trabajos" >Mis Proyectos</a></li>
               </ul>
             </li>
             <li id="nav-item2" class="nav-item nav-item1 col-xxl-2 col-xl-2 col-lg-2">
-              <!-- <button id="a-nav" class="nav-link a-nav" aria-current="page" *ngIf="!isLogged" (click)="login()">
-               Ingresar*ngIf="!isLogged"
-              </button> -->
               <button id="a-nav" class="nav-link a-nav" aria-current="page"  (click)="login()">
                 Cerrar Sesión
               </button>

@@ -29,7 +29,7 @@ export class EditarTrabajoComponent implements OnInit {
         console.log("aca es el error")
         alert("Error al modificar proyecto");
 
-        this.router.navigate(['/portfolio']);
+        this.router.navigate(['/mis-trabajos']);
       }
     )
 
@@ -42,15 +42,15 @@ export class EditarTrabajoComponent implements OnInit {
     this.sProyectos.update(id, this.proyectos).subscribe(
       data => {
         alert("Proyecto Modificado");
-        this.router.navigate(['/portfolio']);
+        this.router.navigate(['/mis-trabajos']);
       }, err => {
         alert("Error al modificar proyecto");
-        this.router.navigate(['/portfolio']);
+        this.router.navigate(['/mis-trabajos']);
       }
     )
   }
 
   retorno():void{
-    this.router.navigate(['/portfolio'])
+    this.router.navigate(['/mis-trabajos'])
   }
 }

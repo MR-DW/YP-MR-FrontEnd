@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Experiencia } from 'src/app/model/experiencia';
 import { SExperienciaService } from 'src/app/servicios/s-experiencia.service';
-// import { TokenService } from 'src/app/servicios/token.service';
 
 
 @Component({
@@ -15,7 +14,6 @@ export class ExperienciaComponent implements OnInit{
   data: any;
 
   constructor(private sExperiencia:SExperienciaService,
-    // private tokenService: TokenService
     ){
 
   }
@@ -25,14 +23,6 @@ export class ExperienciaComponent implements OnInit{
   ngOnInit(): void{
     //llama a la funcion que trae las experiencias
     this.cargarExperiencia();
-
-     //Valida si está loggeado
-    // if(this.tokenService.getToken()){
-    //   this.isLogged = true;
-
-    // }else{
-    //   this.isLogged = false;
-    // }
   }
 
   //trae las experiencias
